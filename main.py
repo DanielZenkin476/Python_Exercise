@@ -11,7 +11,7 @@ class Solution(object):
 
 
 sol = Solution()
-sol.myAtoi(self, s)
+sol.myAtoi("  Test ss2   d    ")
 
 
 
