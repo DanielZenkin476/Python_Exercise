@@ -69,11 +69,10 @@ class Solution(object):
         if len(height) == 1 or len(height) == 0:
             return 0
         max_mass = 0
-        max_check = 0
+
         for i in range(0,len(height)):
             for j in range(i,len(height)):
-                max_check = min(height[i],height[j])*(j-i)
-                max_mass = max(max_mass,max_check)
+                max_mass = max(max_mass,min(height[i],height[j])*(j-i))
         return  max_mass
 
 
