@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="new problem: You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).&#10;&#10;Find two lines that together with the x-axis form a container, such that the container contains the most water.&#10;&#10;Return the maximum amount of water a container can store.&#10;&#10;Notice that you may not slant the container.">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="removed max_check for space">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +152,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729946836792</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="works, but O(n^2) - inefficent">
+      <option name="closed" value="true" />
+      <created>1729947283638</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729947283638</updated>
+    </task>
+    <task id="LOCAL-00012" summary="removed max_check for space">
+      <option name="closed" value="true" />
+      <created>1729947307026</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729947307026</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,7 +182,9 @@
     <MESSAGE value="done with fixes, works, had to change + and - on values bigger then -2^31 or 2^31 -1 in abs" />
     <MESSAGE value="new problem : Given an integer x, return true if x is a &#10;palindrome&#10;, and false otherwise" />
     <MESSAGE value="new problem: You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).&#10;&#10;Find two lines that together with the x-axis form a container, such that the container contains the most water.&#10;&#10;Return the maximum amount of water a container can store.&#10;&#10;Notice that you may not slant the container." />
-    <option name="LAST_COMMIT_MESSAGE" value="new problem: You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).&#10;&#10;Find two lines that together with the x-axis form a container, such that the container contains the most water.&#10;&#10;Return the maximum amount of water a container can store.&#10;&#10;Notice that you may not slant the container." />
+    <MESSAGE value="works, but O(n^2) - inefficent" />
+    <MESSAGE value="removed max_check for space" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed max_check for space" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -174,6 +193,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>55</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

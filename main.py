@@ -66,14 +66,36 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        if len(height) == 1 or len(height) == 0:
+        n = len(height)
+        if n == 1 or n == 0:
             return 0
         max_mass = 0
-
-        for i in range(0,len(height)):
-            for j in range(i,len(height)):
-                max_mass = max(max_mass,min(height[i],height[j])*(j-i))
+        for i in range(0,n):
+            if max_mass > height[i]* (n-i-1): pass
+            else:
+                for j in range(i+1,n):
+                    if max_mass > height[i] * (n-i-1): break
+                    max_mass = max(max_mass,min(height[i],height[j])*(j-i))
         return  max_mass
+
+    def maxArea2(self,height):
+        """
+                :type height: List[int]
+                :rtype: int
+                """
+        n = len(height)
+        if n == 1 or n == 0:
+            return 0
+        i = 0
+        j = n-1
+        max_area = 0
+        while (i <j):
+            min_piller = min(height[i],height[j])
+            max_area = max(max_area,min_piller* (j-i) )
+            if min_piller == height[i]: i+=1
+            else: j-=1
+        return max_area
+
 
 
 
@@ -91,7 +113,7 @@ class Solution(object):
 
 sol = Solution()
 height = [1,8,6,2,5,4,8,3,7]
-print(sol.maxArea(height))
+print(sol.maxArea2(height))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
