@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works, zeros work, should be fine" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="fixed error if string ends on number">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729944617272</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed error if string ends on number">
+      <option name="closed" value="true" />
+      <created>1729944763899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729944763899</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +138,7 @@
     <MESSAGE value="works for small numbers and no middle zeros, need to fix for others" />
     <MESSAGE value="works, but need to check for diffrent inputs and problems" />
     <MESSAGE value="works, zeros work, should be fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="works, zeros work, should be fine" />
+    <MESSAGE value="fixed error if string ends on number" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error if string ends on number" />
   </component>
 </project>
