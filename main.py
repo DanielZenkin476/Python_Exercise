@@ -27,6 +27,7 @@ class Solution(object):
                 curr_int = int(curr_char)
                 res = res*10 + curr_int
             st = st[1:]
+            if len(st) == 0: break
             curr_char = st[0]
             curr_val = ord(curr_char)
         res *= sign
@@ -42,7 +43,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.myAtoi("  -00001217008768    "))
+print(sol.myAtoi("  -00001217008768"))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 

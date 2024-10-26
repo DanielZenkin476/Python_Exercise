@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works for small numbers and no middle zeros, need to fix for others" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works, zeros work, should be fine" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +101,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729944129722</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="works, but need to check for diffrent inputs and problems">
+      <option name="closed" value="true" />
+      <created>1729944344270</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729944344270</updated>
+    </task>
+    <task id="LOCAL-00006" summary="works, zeros work, should be fine">
+      <option name="closed" value="true" />
+      <created>1729944617272</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729944617272</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,17 +125,8 @@
     <MESSAGE value="changed function use with test" />
     <MESSAGE value="sign check added" />
     <MESSAGE value="works for small numbers and no middle zeros, need to fix for others" />
-    <option name="LAST_COMMIT_MESSAGE" value="works for small numbers and no middle zeros, need to fix for others" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="works, but need to check for diffrent inputs and problems" />
+    <MESSAGE value="works, zeros work, should be fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="works, zeros work, should be fine" />
   </component>
 </project>
