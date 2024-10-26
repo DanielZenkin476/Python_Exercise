@@ -96,23 +96,20 @@ class Solution(object):
             else: j-=1
         return max_area
 
-
-
-
-
-
-
-
-
-
-
-
-
+    def intToRoman(self, num):
+        """
+        :type num: int
+        :rtype: str
+        """
+        roman_dict = {1:"I",5:"V",10:"X",50:"L",100:"C",500:"D",1000:"M",}
+        st = ''
+        while(num>1000):
+            st+= roman_dict[1000]
+        print(st)
 
 
 
 sol = Solution()
-height = [1,8,6,2,5,4,8,3,7]
 print(sol.maxArea2(height))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
