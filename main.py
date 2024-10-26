@@ -122,11 +122,57 @@ class Solution(object):
                 i-=1
         return(st)
 
+    def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        i = len(s)-1
+        curr_sym = ""
+        roman_dict = {"I":1,"V":5,"X":10,"L":50,"C":100,"D":500,"M":1000}
+        flags = [False,False,False]# I,X,C
+        res = 0
+        while(i>=0):
+            curr_sym = s[i]
+            if (flags[0] and s[i]=='I') or (flags[1] and s[i]=='X') or (flags[2] and s[i]=='C') :
+                res-= roman_dict[s[i]]
+                i-=1
+                flags = [False, False, False]  # I,X,C
+            else:
+                res+= roman_dict[s[i]]
+                if s[i] == 'V' or s[i] == 'X':
+                    flags = [True, False, False]
+                elif s[i] == 'L' or s[i] == 'C':
+                    flags = [False, True, False]
+                elif s[i] == 'D' or s[i] == 'M':
+                    flags = [False, False, True]
+                i-=1
+        return res
 
-
-
-
-
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if len(strs) == 0:
+            return ""
+        if len(strs) == 1:
+            return strs[0]
+        strs = sorted(strs,key = len)
+        st = strs[0]
+        max_st = ""
+        for i in range(0,len(st)):
+            for j in range(i,len(st)):
+                in_strs = True
+                curr_sub = st[i:j+1]
+                for s in strs:
+                    if curr_sub not in s:
+                        in_strs = False
+                        break
+                if in_strs:
+                    if len(max_st)< len(curr_sub):
+                        max_st = curr_sub
+        return max_st
 
 
 
@@ -134,7 +180,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.intToRoman(1994))
+print(sol.longestCommonPrefix(["flower","flow","flight"]))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="made new basic one with 2 arrays, no IV or sorts yet">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="done with question, beats 88.6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +208,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729951643038</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="new function done, runs much better( runtime and memory)">
+      <option name="closed" value="true" />
+      <created>1729952058671</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729952058671</updated>
+    </task>
+    <task id="LOCAL-00019" summary="done with question, beats 88.6">
+      <option name="closed" value="true" />
+      <created>1729953298793</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729953298793</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,7 +245,9 @@
     <MESSAGE value="new ques, integer to roman" />
     <MESSAGE value="dumb sol, bad runtime" />
     <MESSAGE value="made new basic one with 2 arrays, no IV or sorts yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="made new basic one with 2 arrays, no IV or sorts yet" />
+    <MESSAGE value="new function done, runs much better( runtime and memory)" />
+    <MESSAGE value="done with question, beats 88.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with question, beats 88.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -237,6 +256,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>55</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
