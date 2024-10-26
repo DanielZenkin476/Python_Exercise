@@ -103,14 +103,64 @@ class Solution(object):
         """
         roman_dict = {1:"I",5:"V",10:"X",50:"L",100:"C",500:"D",1000:"M",}
         st = ''
-        while(num>1000):
+        while num >= 1000:
             st+= roman_dict[1000]
-        print(st)
+            num-=1000
+        if num >= 900:
+            st+=roman_dict[100]+roman_dict[1000]
+            num-=900
+
+        while num >= 500:
+            st += roman_dict[500]
+            num -= 500
+        if num >= 400:
+            st+=roman_dict[100]+roman_dict[500]
+            num -= 400
+
+        while num >= 100:
+            st += roman_dict[100]
+            num -= 100
+        if num >= 90:
+            st += roman_dict[10] + roman_dict[100]
+            num -= 90
+
+        while (num >= 50):
+            st += roman_dict[50]
+            num -= 50
+        if num >= 40:
+            st += roman_dict[10] + roman_dict[50]
+            num -= 40
+
+        while num >= 10:
+            st += roman_dict[10]
+            num -= 10
+        if num >= 9:
+            st += roman_dict[1] + roman_dict[10]
+            num -= 9
+
+        while (num >= 5):
+            st += roman_dict[5]
+            num -= 5
+        if num >= 4:
+            st += roman_dict[1] + roman_dict[5]
+            num -= 4
+
+        while num >= 1:
+            st += roman_dict[1]
+            num -= 1
+
+        return st
+
+
+
+
+
+
 
 
 
 sol = Solution()
-print(sol.maxArea2(height))
+print(sol.intToRoman(100))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 

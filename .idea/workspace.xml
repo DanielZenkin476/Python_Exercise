@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="removed max_check for space">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="new ques, integer to roman">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +167,31 @@
       <option name="project" value="LOCAL" />
       <updated>1729947307026</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added new sol">
+      <option name="closed" value="true" />
+      <created>1729949188669</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729949188669</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added new sol, apparently pretty good">
+      <option name="closed" value="true" />
+      <created>1729949212422</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729949212422</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new ques, integer to roman">
+      <option name="closed" value="true" />
+      <created>1729949557628</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729949557628</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -184,7 +207,10 @@
     <MESSAGE value="new problem: You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).&#10;&#10;Find two lines that together with the x-axis form a container, such that the container contains the most water.&#10;&#10;Return the maximum amount of water a container can store.&#10;&#10;Notice that you may not slant the container." />
     <MESSAGE value="works, but O(n^2) - inefficent" />
     <MESSAGE value="removed max_check for space" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed max_check for space" />
+    <MESSAGE value="added new sol" />
+    <MESSAGE value="added new sol, apparently pretty good" />
+    <MESSAGE value="new ques, integer to roman" />
+    <option name="LAST_COMMIT_MESSAGE" value="new ques, integer to roman" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -193,11 +219,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>55</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
