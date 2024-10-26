@@ -21,25 +21,20 @@ class Solution(object):
             curr_val = ord(curr_char)
         loop_count = 0
         while(48<=curr_val<=57):
-            print(res)
             if curr_val ==48 and leading_zero == False:
                 st = st[1:]
                 curr_char = st[0]
                 curr_val = ord(curr_char)
                 pass
             else:
-                if curr_val == 48 :
-                    res = res * 10
-                else:
-                    print('curr:',curr_char)
-                    res += int(curr_char)/(10**mult)
-                    mult+=1
+                curr_int = int(curr_char)
+                res = res*10 + curr_int
                 st = st[1:]
                 curr_char = st[0]
                 curr_val = ord(curr_char)
                 loop_count+=1
-        res = sign * int(res*(10**loop_count-1))
-        print(res)
+        res *= sign
+        return (res)
 
 
 
@@ -51,8 +46,8 @@ class Solution(object):
 
 
 sol = Solution()
-sol.myAtoi("  -123213    ")
-print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
+print(sol.myAtoi("  -12178768    "))
+#print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
 
