@@ -103,13 +103,22 @@ class Solution(object):
         """
         roman_dict = ["I","V","X","L","C","D","M"]
         roman_val = [1,5,10,50,100,500,1000]
+        #            0 1  2  3  4   5   6 even need to check, odd not
         st = ''
         i = len(roman_val)-1
         while(num>0):
-            if num>= roman_val[i]:
+            if num>= roman_val[i] or i == 0:
                 st+= roman_dict[i]
                 num-= roman_val[i]
             else:
+                if i%2 == 0 and i != 0 :
+                    if num >= roman_val[i]-roman_val[i-2] : #for exemp num >= 1000-100 = 900
+                        st+= roman_dict[i-2]+roman_dict[i]
+                        num-= roman_val[i]-roman_val[i-2]
+                if i%2 == 1 :
+                    if num >= roman_val[i]-roman_val[i-1] : #for exemp num >= 500-100 = 900
+                        st+= roman_dict[i-1]+roman_dict[i]
+                        num-= roman_val[i]-roman_val[i-1]
                 i-=1
         return(st)
 
@@ -125,7 +134,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.intToRoman(6))
+print(sol.intToRoman(1994))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 

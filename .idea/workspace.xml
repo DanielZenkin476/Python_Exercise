@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="new ques, integer to roman">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="made new basic one with 2 arrays, no IV or sorts yet">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729949557628</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dumb sol, bad runtime">
+      <option name="closed" value="true" />
+      <created>1729951382780</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729951382780</updated>
+    </task>
+    <task id="LOCAL-00017" summary="made new basic one with 2 arrays, no IV or sorts yet">
+      <option name="closed" value="true" />
+      <created>1729951643038</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1729951643038</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,7 +226,9 @@
     <MESSAGE value="added new sol" />
     <MESSAGE value="added new sol, apparently pretty good" />
     <MESSAGE value="new ques, integer to roman" />
-    <option name="LAST_COMMIT_MESSAGE" value="new ques, integer to roman" />
+    <MESSAGE value="dumb sol, bad runtime" />
+    <MESSAGE value="made new basic one with 2 arrays, no IV or sorts yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="made new basic one with 2 arrays, no IV or sorts yet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
