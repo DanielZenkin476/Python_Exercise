@@ -66,6 +66,17 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
+        if len(height) == 1 or len(height) == 0:
+            return 0
+        max_mass = 0
+        max_check = 0
+        for i in range(0,len(height)):
+            for j in range(i,len(height)):
+                max_check = min(height[i],height[j])*(j-i)
+                max_mass = max(max_mass,max_check)
+        return  max_mass
+
+
 
 
 
@@ -80,7 +91,8 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.isPalindrome(121))
+height = [1,8,6,2,5,4,8,3,7]
+print(sol.maxArea(height))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
