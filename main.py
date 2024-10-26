@@ -48,6 +48,27 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
+        if x < 0 : return False # always not true if negative
+        if x == 0 : return True
+        # reverse int, chek if coimp is 0
+        for_num= x
+        num = 0
+        while (for_num!= 0):
+            num *= 10
+            num+= for_num%10
+            for_num = for_num // 10
+        if num-x == 0:
+            return True
+        else : return False
+
+    def maxArea(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+
+
+
 
 
 
@@ -59,7 +80,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.myAtoi(" -2147483649"))
+print(sol.isPalindrome(121))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
