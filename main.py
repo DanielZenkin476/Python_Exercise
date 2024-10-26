@@ -1,6 +1,4 @@
 from itertools import filterfalse
-
-
 class Solution(object):
     def myAtoi(self, s):
         """
@@ -44,6 +42,12 @@ class Solution(object):
         if res >(2 ** 31 - 1):
             res = 2 **31 -1
         return (res)
+
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
 
 
 
