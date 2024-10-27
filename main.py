@@ -246,6 +246,63 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        n = len(nums)
+        if n == 3:
+            return nums[0]+nums[1]+nums[2]
+        nums = sorted(nums)
+        i = 0
+        j = 1
+        k = n-1
+        close_sum = None
+        while i<k:
+            j = i+1
+            while(j<k):
+                sum = nums[i]+nums[j]+nums[k]
+                if sum == target:
+                    return sum
+                elif close_sum ==None or abs(sum-target) < abs(close_sum-target):
+                    close_sum = sum
+                if sum >target:
+                    k-=1
+                elif sum<target:
+                    j+=1
+            k = n-1
+            i+=1
+        return close_sum
+
+    def letterCombinations(self, digits):
+        """
+        :type digits: str
+        :rtype: List[str]
+        """
+        digits = digits.strip()
+        if digits =="":
+            return []
+        strings = [['a','b','c'],['d','e','f'],['g','h','i'],['j','k','l'],['m','n','o'],['p','q','r','s'],['t','u','v'],['w','x','y','z']]
+        res = []
+        combos = []
+        for i in range(len(digits)):
+            combos.append(strings[int(digits[i])-2])
+        for combo in combos:
+            res = self.create_com(combo,res)
+        return res
+
+    def create_com(self,letters,res):
+        if res ==[]:#list empty- create
+            for lt in letters:
+                res.append(lt)
+            return res
+        else:
+            new_res = []
+            for result in res:
+                for lt in letters:
+                    new_res.append(result+lt)
+            return new_res
+
+
+
+
+
 
 
 
@@ -262,8 +319,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.threesum_2([-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0]))
-#print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
+print(sol.letterCombinations("23"))
 
 
 
