@@ -240,6 +240,14 @@ class Solution(object):
             i += 1
         return res
 
+    class Solution(object):
+        def threeSumClosest(self, nums, target):
+            """
+            :type nums: List[int]
+            :type target: int
+            :rtype: int
+            """
+
 
 
 
