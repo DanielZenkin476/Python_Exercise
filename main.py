@@ -469,8 +469,23 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        nums = list(set(nums))
-        return len(nums),nums
+        n = len(nums)
+        if  n==0:
+            return 0
+        if n==1 :
+            return 1
+        else:
+            i=0
+            j=1
+            while(i<j<n):
+                if j== len(nums):
+                    break
+                if nums[i] == nums[j]:
+                    nums.pop(j)
+                else:
+                    i += 1
+                    j += 1
+        return len(nums)
 
 
 
@@ -497,6 +512,7 @@ h = ListNode(1,b)
 a = [0,0,1,1,1,2,2,3,3,4]
 len, a =sol.removeDuplicates(a)
 print(a)
+
 
 
 

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="done,need to improve memory" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="so should be working but on site side not because reasons?">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -389,12 +391,26 @@
       <option name="project" value="LOCAL" />
       <updated>1730046742452</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="26. Remove Duplicates from Sorted Array&#10;Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.&#10;&#10;Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.&#10;Return k.&#10;trying convert to set then to list to see how it works">
+      <option name="closed" value="true" />
+      <created>1730047225056</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1730047225056</updated>
+    </task>
+    <task id="LOCAL-00042" summary="so should be working but on site side not because reasons?">
+      <option name="closed" value="true" />
+      <created>1730047331260</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1730047331260</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new sol, apparently pretty good" />
-    <MESSAGE value="new ques, integer to roman" />
     <MESSAGE value="dumb sol, bad runtime" />
     <MESSAGE value="made new basic one with 2 arrays, no IV or sorts yet" />
     <MESSAGE value="new function done, runs much better( runtime and memory)" />
@@ -418,7 +434,9 @@
     <MESSAGE value="done" />
     <MESSAGE value="21.You are given the heads of two sorted linked lists list1 and list2.&#10;&#10;Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.&#10;&#10;Return the head of the merged linked list." />
     <MESSAGE value="done,need to improve memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="done,need to improve memory" />
+    <MESSAGE value="26. Remove Duplicates from Sorted Array&#10;Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.&#10;&#10;Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.&#10;Return k.&#10;trying convert to set then to list to see how it works" />
+    <MESSAGE value="so should be working but on site side not because reasons?" />
+    <option name="LAST_COMMIT_MESSAGE" value="so should be working but on site side not because reasons?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -452,6 +470,16 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>374</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>483</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>479</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
