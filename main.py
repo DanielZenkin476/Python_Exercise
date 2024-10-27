@@ -211,23 +211,33 @@ class Solution(object):
         res = []
         arr = sorted(nums)
         i = 0
-        j=1
-        k=n-1
+        j = 1
+        k = n - 1
         while (i < k):
             j = i + 1
-            k=n-1
-            while j<k:
-                solu = [arr[i],arr[j],arr[k]]
-                sum = solu[0]+solu[1]+solu[2]
-                if sum ==0:
+            k = n - 1
+            while j < k:
+                solu = [arr[i], arr[j], arr[k]]
+                sum = solu[0] + solu[1] + solu[2]
+                if sum == 0:
                     if solu not in res:
                         res.append(solu)
-                    j+=1
-                if sum<0:
-                    j+=1
-                if sum>0:
-                    k-=1
-            i+=1
+                    j += 1
+                if sum < 0:
+                    prev = arr[j]
+                    try:
+                        while sum - prev + arr[j] < 0:
+                            j += 1
+                    except:
+                        break  # all out of range
+                if sum > 0:
+                    prev = arr[k]
+                    try:
+                        while sum - prev + arr[k] > 0:
+                            k -= 1
+                    except:
+                        break  # all out of range
+            i += 1
         return res
 
 

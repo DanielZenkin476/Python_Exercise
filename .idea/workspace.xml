@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works, but runtime neets help">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works, runtime passed but not great">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -288,11 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730025252224</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="works, runtime passed but not great">
+      <option name="closed" value="true" />
+      <created>1730027344610</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730027344610</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed function use with test" />
     <MESSAGE value="sign check added" />
     <MESSAGE value="works for small numbers and no middle zeros, need to fix for others" />
     <MESSAGE value="works, but need to check for diffrent inputs and problems" />
@@ -317,7 +323,8 @@
     <MESSAGE value="added helper function to check sum of 3 ints" />
     <MESSAGE value="not working for 000 if 0 is in any list" />
     <MESSAGE value="works, but runtime neets help" />
-    <option name="LAST_COMMIT_MESSAGE" value="works, but runtime neets help" />
+    <MESSAGE value="works, runtime passed but not great" />
+    <option name="LAST_COMMIT_MESSAGE" value="works, runtime passed but not great" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -336,21 +343,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>177</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>229</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>215</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>222</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
