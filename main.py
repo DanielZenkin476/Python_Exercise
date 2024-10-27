@@ -193,21 +193,12 @@ class Solution(object):
                     for k in range(0,n):
                         if k!= j and k!= i:
                             if nums[k]==nums[j]==nums[i]==0 :
-                                print('got')
                             if nums[k]+nums[j]+nums[i] == 0:
                                 flag = True
-                                for lst in res:
-                                    if nums[k] in lst and  nums[i] in lst and nums[j] in lst:
-                                        flag = False
-                                        break
-                                if flag: res.append([nums[k],nums[j],nums[i]])
+                                temp_lst = [nums[k],nums[j],nums[i]]
+                                temp_lst.sort()
+                                if temp_lst not in res: res.append(temp_lst)
         return res
-
-
-
-
-
-
 
     def threeSum_check(self,nums):
         if nums[0] + nums[1] + nums[2] == 0:
