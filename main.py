@@ -409,6 +409,12 @@ class Solution(object):
             delete.next=None
         return head
 
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+
     # need to update - q
 
 

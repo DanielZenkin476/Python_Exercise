@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="used recursion, works but can do better">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="new method, works faster , no recursion, runtime great">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -351,11 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730044284298</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="new method, works faster , no recursion, runtime great">
+      <option name="closed" value="true" />
+      <created>1730044674891</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730044674891</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new problem : Given an integer x, return true if x is a &#10;palindrome&#10;, and false otherwise" />
     <MESSAGE value="new problem: You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).&#10;&#10;Find two lines that together with the x-axis form a container, such that the container contains the most water.&#10;&#10;Return the maximum amount of water a container can store.&#10;&#10;Notice that you may not slant the container." />
     <MESSAGE value="works, but O(n^2) - inefficent" />
     <MESSAGE value="removed max_check for space" />
@@ -380,7 +387,8 @@
     <MESSAGE value="#need to update - q 18 4Sum" />
     <MESSAGE value="new ques- did it wrong :Given the head of a linked list, remove the nth node from the end of the list and return its head. #### from the end!!!" />
     <MESSAGE value="used recursion, works but can do better" />
-    <option name="LAST_COMMIT_MESSAGE" value="used recursion, works but can do better" />
+    <MESSAGE value="new method, works faster , no recursion, runtime great" />
+    <option name="LAST_COMMIT_MESSAGE" value="new method, works faster , no recursion, runtime great" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
