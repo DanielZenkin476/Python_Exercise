@@ -436,6 +436,34 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+        if not list2 :
+            return list1
+        if not list1:
+            return list2
+        #both lists exsists
+        n1 = list1
+        n2 = list2
+        if n1.val>n2.val:
+            head = ListNode(n2.val)
+            n2 = n2.next
+        else:
+            head = ListNode(n1.val)
+            n1 = n1.next
+        node = head
+        while n1 and n2:
+            if n1.val < n2.val:
+                node.next = ListNode(n1.val)
+                n1=n1.next
+            else:
+                node.next = ListNode(n2.val)
+                n2 = n2.next
+            node = node.next
+        if n1:
+            node.next = n1
+        if n2:
+            node.next = n2
+        return head
+
 
 
 
@@ -454,13 +482,13 @@ d = ListNode(4,e)
 c = ListNode(3,d)
 b = ListNode(2,c)
 h = ListNode(1,b)
-
+h = sol.mergeTwoLists(e,c)
 #h = sol.removeNthFromEnd_2(h,2)
-#while h :
- #   print(h.val,",")
-  #  h=h.next
+while h :
+    print(h.val,",")
+    h=h.next
 
-print(sol.isValid("({([])})"))
+
 
 
 
