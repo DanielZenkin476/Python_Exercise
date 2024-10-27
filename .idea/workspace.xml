@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="21.You are given the heads of two sorted linked lists list1 and list2.&#10;&#10;Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.&#10;&#10;Return the head of the merged linked list.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="done,need to improve memory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -384,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730045888981</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="done,need to improve memory">
+      <option name="closed" value="true" />
+      <created>1730046742452</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1730046742452</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new sol" />
     <MESSAGE value="added new sol, apparently pretty good" />
     <MESSAGE value="new ques, integer to roman" />
     <MESSAGE value="dumb sol, bad runtime" />
@@ -413,7 +417,8 @@
     <MESSAGE value="20.Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.&#10;&#10;An input string is valid if:&#10;&#10;Open brackets must be closed by the same type of brackets.&#10;Open brackets must be closed in the correct order.&#10;Every close bracket has a corresponding open bracket of the same type." />
     <MESSAGE value="done" />
     <MESSAGE value="21.You are given the heads of two sorted linked lists list1 and list2.&#10;&#10;Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.&#10;&#10;Return the head of the merged linked list." />
-    <option name="LAST_COMMIT_MESSAGE" value="21.You are given the heads of two sorted linked lists list1 and list2.&#10;&#10;Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.&#10;&#10;Return the head of the merged linked list." />
+    <MESSAGE value="done,need to improve memory" />
+    <option name="LAST_COMMIT_MESSAGE" value="done,need to improve memory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -447,16 +452,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>374</line>
           <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>452</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>438</line>
-          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

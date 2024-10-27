@@ -464,6 +464,13 @@ class Solution(object):
             node.next = n2
         return head
 
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums = list(set(nums))
+        return len(nums)
 
 
 
@@ -487,7 +494,7 @@ h = sol.mergeTwoLists(e,c)
 while h :
     print(h.val,",")
     h=h.next
-
+print(list(set([1,1,1,2,3,4,4,4,5,9])))
 
 
 
