@@ -470,7 +470,7 @@ class Solution(object):
         :rtype: int
         """
         nums = list(set(nums))
-        return len(nums)
+        return len(nums),nums
 
 
 
@@ -489,12 +489,14 @@ d = ListNode(4,e)
 c = ListNode(3,d)
 b = ListNode(2,c)
 h = ListNode(1,b)
-h = sol.mergeTwoLists(e,c)
+#h = sol.mergeTwoLists(e,c)
 #h = sol.removeNthFromEnd_2(h,2)
-while h :
-    print(h.val,",")
-    h=h.next
-print(list(set([1,1,1,2,3,4,4,4,5,9])))
+#while h :
+ #   print(h.val,",")
+  #  h=h.next
+a = [0,0,1,1,1,2,2,3,3,4]
+len, a =sol.removeDuplicates(a)
+print(a)
 
 
 
