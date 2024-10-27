@@ -175,6 +175,12 @@ class Solution(object):
             max_st = curr_sub
         return max_st
 
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+
 
 
 
