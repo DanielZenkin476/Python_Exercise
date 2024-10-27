@@ -356,23 +356,33 @@ class Solution(object):
         :type n: int
         :rtype: Optional[ListNode]
         """
-        if n == 0:
+        if head is None: return None
+        if head.next is None and n==1: return None
+        father =self.recursive_try(head,n,False)
+        if type(father)== int:
             return head.next
-        else:
-            if n==1 and head.next ==None:
-                return None
-            node = head
-            prev = node
-            while (n!= 0):
-                prev = node
-                node = node.next
-                n-=1
-            if node.next:
-                prev.next = node.next
-                node.next = None
-            else :
-                prev.next = None
+        son = father.next
+        if son.next:
+            father.next = son.next
+            son.next = None
+        else :
+            father.next = None
         return head
+
+
+    def recursive_try(self,node,n,flag):
+        #function returns father of node to remove
+        if node.next == None:
+            flag = True
+            return n-1
+        else:
+            left = self.recursive_try(node.next,n,False)
+            if type(left)!= int:
+                return left
+            if left == 0:
+                return node
+            else : return left-1
+
 
 
 
@@ -394,7 +404,7 @@ c = ListNode(3,d)
 b = ListNode(2,c)
 h = ListNode(1,b)
 
-h = sol.removeNthFromEnd(e,1)
+h = sol.removeNthFromEnd(h,2)
 while h :
     print(h.val,",")
     h=h.next
