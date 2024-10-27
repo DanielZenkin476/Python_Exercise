@@ -414,6 +414,22 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        lst = []
+        i= 0
+        while(i<len(s)):
+            char = s[i]
+            if char =="[" or char == "{" or char =="(":
+                lst.append(char)
+            else:
+                if len(lst)== 0:
+                    return False
+                check_char = lst.pop()
+                if ord(s[i]) -ord(check_char) <1 or ord(s[i]) -ord(check_char) >2  :
+                    return False
+            i+=1
+        if len(lst)==0 : return True
+        else: return False
+
 
     # need to update - q
 
@@ -431,10 +447,13 @@ c = ListNode(3,d)
 b = ListNode(2,c)
 h = ListNode(1,b)
 
-h = sol.removeNthFromEnd_2(h,2)
-while h :
-    print(h.val,",")
-    h=h.next
+#h = sol.removeNthFromEnd_2(h,2)
+#while h :
+ #   print(h.val,",")
+  #  h=h.next
+
+print(sol.isValid("({([])})"))
+
 
 
 
