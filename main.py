@@ -350,19 +350,56 @@ class Solution(object):
             a+=1
         return res
 
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: Optional[ListNode]
+        :type n: int
+        :rtype: Optional[ListNode]
+        """
+        if n == 0:
+            return head.next
+        else:
+            if n==1 and head.next ==None:
+                return None
+            node = head
+            prev = node
+            while (n!= 0):
+                prev = node
+                node = node.next
+                n-=1
+            if node.next:
+                prev.next = node.next
+                node.next = None
+            else :
+                prev.next = None
+        return head
+
+
+
 
 
     # need to update - q
 
 
 #need to update - q 18 4Sum
-
-
-
-
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 sol = Solution()
-print(sol.fourSum([-3,-2,-1,0,0,1,2,3], target = 0))
+e = ListNode(5)
+d = ListNode(4,e)
+c = ListNode(3,d)
+b = ListNode(2,c)
+h = ListNode(1,b)
+
+h = sol.removeNthFromEnd(e,1)
+while h :
+    print(h.val,",")
+    h=h.next
+
+
 
 
 
