@@ -180,6 +180,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        n = len(nums)
+        if n<3:
+            return []
+        if n == 3 :
+            if nums[0]+nums[1]+nums[2] == 0: return nums
+            else: return []
+
+
 
 
 
@@ -187,7 +195,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.longestCommonPrefix(["a","ab"]))
+print(sol.threeSum([1,2,-3]))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
