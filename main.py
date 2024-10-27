@@ -186,6 +186,14 @@ class Solution(object):
         if n == 3 :
             if nums[0]+nums[1]+nums[2] == 0: return nums
             else: return []
+        checked = [nums[0],nums[1],nums[2]]
+
+    def threeSum_check(self,nums):
+        if nums[0] + nums[1] + nums[2] == 0:
+            return True
+        else:
+            return False
+
 
 
 
