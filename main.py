@@ -469,27 +469,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        if  n==0:
-            return 0
-        if n==1 :
-            return 1
-        else:
-            i=0
-            j=1
-            while(i<j<n):
-                if j== len(nums):
-                    break
-                if nums[i] == nums[j]:
-                    nums.pop(j)
-                else:
-                    i += 1
-                    j += 1
-        return len(nums)
+        j = 1
+        for i in range(len(nums) - 1):
+            if nums[i] != nums[i + 1]:
+                nums[j] = nums[i + 1]
+                j += 1
+        return j, nums
 
 
 
-    # need to update - q
+        # need to update - q
 
 
 #need to update - q 18 4Sum
@@ -510,7 +499,7 @@ h = ListNode(1,b)
  #   print(h.val,",")
   #  h=h.next
 a = [0,0,1,1,1,2,2,3,3,4]
-len, a =sol.removeDuplicates(a)
+len,a  =sol.removeDuplicates(a)
 print(a)
 
 
