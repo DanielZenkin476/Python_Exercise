@@ -299,27 +299,70 @@ class Solution(object):
                     new_res.append(result+lt)
             return new_res
 
+    def fourSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        n = len(nums)
+        if n<4:
+            return []
+        elif n== 4:
+            if nums[0]+nums[1]+nums[2]+nums[3]==target:
+                return [nums]
+            else: return []
+        nums = sorted(nums)
+        res = []
+        a=0
+        b=a+1
+        d= n-1
+        c= d-1
+        while(a<n-3 ):
+            b = a + 1
+            d = n - 1
+            c = d - 1
+            while(b<c):
+                curr_sum = nums[a] + nums[b] + nums[c] + nums[d]
+                if curr_sum == target:
+                    solu = [nums[a], nums[b], nums[c], nums[d]]
+                    if solu not in res and a != b != c != d:
+                        res.append(solu)
+                    b += 1
+                if curr_sum > target:  # need to decrease sum
+                    if c == d - 1 and b == c - 1:  # c and d cant decrease - stop loop
+                        break
+                    elif b == c - 1:  # c cant decrease -> decrease d
+                        d -= 1
+                        c = d-1
+                    # now if both can decrease or d cant decrease
+                    else:
+                        c-=1
+                if curr_sum < target:  # need to decrease sum
+                    if a == b - 1 and b == c - 1:  # c and d cant decrease - stop loop
+                        break
+                    elif b == c - 1:  # b cant increase -> increase a
+                        a += 1
+                        b = a+1
+                    # now if both can increase:
+                    else:
+                        b+=1
+            a+=1
+        return res
 
 
 
+    # need to update - q
 
 
-
-
-
-
-
-
-
-
-
+#need to update - q 18 4Sum
 
 
 
 
 
 sol = Solution()
-print(sol.letterCombinations("23"))
+print(sol.fourSum([-3,-2,-1,0,0,1,2,3], target = 0))
 
 
 

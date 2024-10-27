@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution.">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works great, beats most peapole (omsec runtime) ,space is 51 -">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -27,7 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -320,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730028118052</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="works great, beats most peapole (omsec runtime) ,space is 51 -">
+      <option name="closed" value="true" />
+      <created>1730030820579</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1730030820579</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="works, but need to check for diffrent inputs and problems" />
     <MESSAGE value="works, zeros work, should be fine" />
     <MESSAGE value="fixed error if string ends on number" />
     <MESSAGE value="done with fixes, works, had to change + and - on values bigger then -2^31 or 2^31 -1 in abs" />
@@ -349,7 +356,8 @@
     <MESSAGE value="works, runtime passed but not great" />
     <MESSAGE value="final ver" />
     <MESSAGE value="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution." />
+    <MESSAGE value="works great, beats most peapole (omsec runtime) ,space is 51 -" />
+    <option name="LAST_COMMIT_MESSAGE" value="works great, beats most peapole (omsec runtime) ,space is 51 -" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,6 +381,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>291</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>327</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
