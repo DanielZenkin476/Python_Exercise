@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="done with question, beats 88.6">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -224,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729953298793</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;.">
+      <option name="closed" value="true" />
+      <created>1730021899673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1730021899673</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,7 +255,8 @@
     <MESSAGE value="made new basic one with 2 arrays, no IV or sorts yet" />
     <MESSAGE value="new function done, runs much better( runtime and memory)" />
     <MESSAGE value="done with question, beats 88.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with question, beats 88.6" />
+    <MESSAGE value="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,6 +270,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>134</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>163</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

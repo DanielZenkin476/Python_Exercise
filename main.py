@@ -158,20 +158,21 @@ class Solution(object):
             return ""
         if len(strs) == 1:
             return strs[0]
-        strs = sorted(strs,key = len)
+        #strs = sorted(strs,key = len)
         st = strs[0]
         max_st = ""
-        for i in range(0,len(st)):
-            for j in range(i,len(st)):
-                in_strs = True
-                curr_sub = st[i:j+1]
-                for s in strs:
-                    if curr_sub not in s:
+        for j in range(0,len(st)):
+            curr_sub = st[0:j+1]
+            in_strs = True
+            for s in strs:
+                try:
+                    if curr_sub != s[0:j + 1]:
                         in_strs = False
                         break
-                if in_strs:
-                    if len(max_st)< len(curr_sub):
-                        max_st = curr_sub
+                except:
+                    break
+            if in_strs == False: break
+            max_st = curr_sub
         return max_st
 
 
@@ -180,7 +181,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.longestCommonPrefix(["flower","flow","flight"]))
+print(sol.longestCommonPrefix(["a","ab"]))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
