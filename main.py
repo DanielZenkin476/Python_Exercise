@@ -199,6 +199,42 @@ class Solution(object):
                                 if temp_lst not in res: res.append(temp_lst)
         return res
 
+    def threesum_2(self,nums):
+        n = len(nums)
+        if n < 3:
+            return []
+        if n == 3:
+            if nums[0] + nums[1] + nums[2] == 0:
+                return [nums]
+            else:
+                return []
+        res = []
+        arr = sorted(nums)
+        i = 0
+        j=1
+        k=n-1
+        while (i < k):
+            j = i + 1
+            k=n-1
+            while j<k:
+                solu = [arr[i],arr[j],arr[k]]
+                sum = solu[0]+solu[1]+solu[2]
+                if sum ==0:
+                    if solu not in res:
+                        res.append(solu)
+                    j+=1
+                if sum<0:
+                    j+=1
+                if sum>0:
+                    k-=1
+            i+=1
+        return res
+
+
+
+
+
+
 
 
 
@@ -208,7 +244,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.threeSum([-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0]))
+print(sol.threesum_2([-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0]))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
