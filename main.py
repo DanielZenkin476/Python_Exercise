@@ -383,10 +383,31 @@ class Solution(object):
                 return node
             else : return left-1
 
-
-
-
-
+    def removeNthFromEnd_2(self, head, n):
+        """
+        :type head: Optional[ListNode]
+        :type n: int
+        :rtype: Optional[ListNode]
+        """
+        node = head
+        delete = head
+        prev = None
+        n-=1
+        while(n!=0):
+            node=node.next
+            n-=1
+        while(node.next!= None):
+            node = node.next
+            prev = delete
+            delete = delete.next
+        if not prev:#delete first node
+            return head.next
+        elif delete.next ==None:
+            prev.next = None
+        else:
+            prev.next = delete.next
+            delete.next=None
+        return head
 
     # need to update - q
 
@@ -404,7 +425,7 @@ c = ListNode(3,d)
 b = ListNode(2,c)
 h = ListNode(1,b)
 
-h = sol.removeNthFromEnd(h,2)
+h = sol.removeNthFromEnd_2(h,2)
 while h :
     print(h.val,",")
     h=h.next
