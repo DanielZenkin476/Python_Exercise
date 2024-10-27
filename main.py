@@ -184,9 +184,30 @@ class Solution(object):
         if n<3:
             return []
         if n == 3 :
-            if nums[0]+nums[1]+nums[2] == 0: return nums
+            if self.threeSum_check(nums): return [nums]
             else: return []
-        checked = [nums[0],nums[1],nums[2]]
+        res = []
+        for i in range(0,n):
+            for j in range(0,n):
+                if j!= i:
+                    for k in range(0,n):
+                        if k!= j and k!= i:
+                            if nums[k]==nums[j]==nums[i]==0 :
+                                print('got')
+                            if nums[k]+nums[j]+nums[i] == 0:
+                                flag = True
+                                for lst in res:
+                                    if nums[k] in lst and  nums[i] in lst and nums[j] in lst:
+                                        flag = False
+                                        break
+                                if flag: res.append([nums[k],nums[j],nums[i]])
+        return res
+
+
+
+
+
+
 
     def threeSum_check(self,nums):
         if nums[0] + nums[1] + nums[2] == 0:
@@ -203,7 +224,7 @@ class Solution(object):
 
 
 sol = Solution()
-print(sol.threeSum([1,2,-3]))
+print(sol.threeSum([-4,-2,1,-5,-4,-4,4,-2,0,4,0,-2,3,1,-5,0]))
 #print("0:",ord("0"),"1:",ord("1"),"9:",ord("9"),)
 
 
