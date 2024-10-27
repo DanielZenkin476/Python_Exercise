@@ -430,6 +430,14 @@ class Solution(object):
         if len(lst)==0 : return True
         else: return False
 
+    def mergeTwoLists(self, list1, list2):
+        """
+        :type list1: Optional[ListNode]
+        :type list2: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+
+
 
     # need to update - q
 
