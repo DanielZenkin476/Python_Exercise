@@ -184,7 +184,7 @@ class Solution(object):
         if n<3:
             return []
         if n == 3 :
-            if self.threeSum_check(nums): return [nums]
+            if nums[0] + nums[1] + nums[2] == 0: return [nums]
             else: return []
         res = []
         for i in range(0,n):
@@ -192,19 +192,12 @@ class Solution(object):
                 if j!= i:
                     for k in range(0,n):
                         if k!= j and k!= i:
-                            if nums[k]==nums[j]==nums[i]==0 :
                             if nums[k]+nums[j]+nums[i] == 0:
                                 flag = True
                                 temp_lst = [nums[k],nums[j],nums[i]]
                                 temp_lst.sort()
                                 if temp_lst not in res: res.append(temp_lst)
         return res
-
-    def threeSum_check(self,nums):
-        if nums[0] + nums[1] + nums[2] == 0:
-            return True
-        else:
-            return False
 
 
 
