@@ -369,7 +369,6 @@ class Solution(object):
             father.next = None
         return head
 
-
     def recursive_try(self,node,n,flag):
         #function returns father of node to remove
         if node.next == None:
