@@ -479,6 +479,34 @@ class Solution(object):
 
         # need to update - q
 
+    def generateParenthesis(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        res = []
+        while(n!=0):
+            if res == []:
+                res.append("()")
+            else:
+                new_res = []
+                for st in res:
+                    new_res.append("("+st+")")
+                    if (st+"()" ) not in new_res:
+                        new_res.append(st+"()" )
+                    if ("()"+st) not in new_res:
+                        new_res.append("()"+st)
+                    res = new_res
+            n-=1
+        return res
+
+    def mergeKLists(self, lists):
+        """
+        :type lists: List[Optional[ListNode]]
+        :rtype: Optional[ListNode]
+        """
+
+
 
 #need to update - q 18 4Sum
 class ListNode(object):
@@ -497,9 +525,9 @@ h = ListNode(1,b)
 #while h :
  #   print(h.val,",")
   #  h=h.next
-a = [0,0,1,1,1,2,2,3,3,4]
-len,a  =sol.removeDuplicates(a)
-print(a)
+#a = [0,0,1,1,1,2,2,3,3,4]
+#len,a  =sol.removeDuplicates(a)
+#print(a)
 
 
 
