@@ -721,6 +721,47 @@ class Solution(object):
             count+=1
         return (count-1)*sign
 
+    def divide_2(self, dividend, divisor):
+        """
+        :type dividend: int
+        :type divisor: int
+        :rtype: int
+        """
+        if divisor == 1:
+            count=  dividend
+        elif divisor ==-1:
+            count=  -dividend
+        else:
+            abs_divisor = abs(divisor)
+            abs_dividend = abs(dividend)
+            if abs_divisor > abs_dividend: return 0
+            if (dividend > 0 and divisor > 0) or (dividend < 0 and divisor < 0):
+                sign = 1
+            else:
+                sign = -1
+            if abs_dividend == abs_divisor: return sign
+            sum = abs_divisor
+            count = sign
+            while (sum <= abs_dividend):
+                sum += sum
+                count += count
+            while (sum >= abs_dividend):
+                sum -= abs_divisor
+                if sign == -1:
+                    count += 1
+                else:
+                    count -= 1
+        if count > ((2 ** 31) - 1):
+            return (2 ** 31) - 1
+        if count < -(2 ** 31):
+            return -(2 ** 31)
+        return count
+
+
+
+
+
+
 
 
 
@@ -743,14 +784,14 @@ h = ListNode(1,b)
 #h = sol.mergeKLists_2([None,e])
 
 h = sol.reverseKGroup(h,2)
-while h:
-    print(h.val, ",")
-    h = h.next
+#while h:
+ #   print(h.val, ",")
+  #  h = h.next
 #a = [0,0,1,1,1,2,2,3,3,4]
 #len,a  =sol.removeDuplicates(a)
 #print(a)
-print(2**31)
-print(sol.divide(-2147483648, -1))
+
+print(sol.divide_2(7, -3))
 
 
 
