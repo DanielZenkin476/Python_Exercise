@@ -505,6 +505,29 @@ class Solution(object):
         :type lists: List[Optional[ListNode]]
         :rtype: Optional[ListNode]
         """
+        try:
+            lists = sorted(lists, key=lambda lst: lst.val)  # sort by first val
+            head = ListNode(lists[0].val)
+            if lists[0].next == None:
+                lists.pop(0)
+            else:
+                lists[0] = lists[0].next
+            node = head
+        except:
+            return None
+        while(lists):
+            lists = sorted(lists, key=lambda lst: lst.val)  # sort by first val
+            node.next = ListNode(lists[0].val)
+            node = node.next
+            if lists[0].next == None:
+                lists.pop(0)
+            else: lists[0] = lists[0].next
+        return head
+
+
+
+
+
 
 
 
@@ -522,12 +545,16 @@ b = ListNode(2,c)
 h = ListNode(1,b)
 #h = sol.mergeTwoLists(e,c)
 #h = sol.removeNthFromEnd_2(h,2)
-#while h :
- #   print(h.val,",")
-  #  h=h.next
+h = sol.mergeKLists([None,e])
+
+while h:
+    print(h.val, ",")
+    h = h.next
 #a = [0,0,1,1,1,2,2,3,3,4]
 #len,a  =sol.removeDuplicates(a)
 #print(a)
+
+
 
 
 
