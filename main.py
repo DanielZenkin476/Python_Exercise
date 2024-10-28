@@ -627,6 +627,18 @@ class Solution(object):
                 if flag : return i
         return -1
 
+    def strStr_2(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
+        if needle in haystack:
+            for i in range (0,len(haystack)):
+                if haystack[i:(i+len(needle))]== needle:
+                    return i
+        else : return -1
+
 
 #need to update - q 18 4Sum
 class ListNode(object):
