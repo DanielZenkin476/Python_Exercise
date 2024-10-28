@@ -532,6 +532,38 @@ class Solution(object):
         return head
 
 
+    def mergeKLists_2(self, lists):
+        """
+        :type lists: List[Optional[ListNode]]
+        :rtype: Optional[ListNode]
+        """
+        data_val = []
+        data = {}
+        for head in lists:
+            temp = head
+            while temp:
+                val = temp.val
+                if val not in data:
+                    data[val] = []
+                    data_val.append(val)
+                data[val].append(temp)
+                temp = temp.next
+        data_val.sort()
+        head = None
+        temp = head
+        for value in data_val:
+            node_lst = data[value]
+            for node in node_lst:
+                if not head:
+                    head =node
+                    temp = node
+                else:
+                    temp.next = node
+                    temp = temp.next
+        return head
+
+
+
 
 
 
@@ -552,7 +584,7 @@ b = ListNode(2,c)
 h = ListNode(1,b)
 #h = sol.mergeTwoLists(e,c)
 #h = sol.removeNthFromEnd_2(h,2)
-h = sol.mergeKLists([None,e])
+h = sol.mergeKLists_2([None,e])
 
 while h:
     print(h.val, ",")

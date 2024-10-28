@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="code works generally but still some cases are bugged ( [],[1] ) for example">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works but runtime is not great">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -448,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730103179760</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="works but runtime is not great">
+      <option name="closed" value="true" />
+      <created>1730103722626</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1730103722626</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;." />
     <MESSAGE value="working as intended, need to make it more efficent" />
     <MESSAGE value="Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.&#10;&#10;Notice that the solution set must not contain duplicate triplets." />
     <MESSAGE value="base cases done (n&lt;=3) in O(1)" />
@@ -477,7 +483,8 @@
     <MESSAGE value="more efficent, doesnt pop but replaces elements" />
     <MESSAGE value="23.You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.&#10;&#10;Merge all the linked-lists into one sorted linked-list and return it." />
     <MESSAGE value="code works generally but still some cases are bugged ( [],[1] ) for example" />
-    <option name="LAST_COMMIT_MESSAGE" value="code works generally but still some cases are bugged ( [],[1] ) for example" />
+    <MESSAGE value="works but runtime is not great" />
+    <option name="LAST_COMMIT_MESSAGE" value="works but runtime is not great" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,11 +518,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>373</line>
           <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>514</line>
-          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
