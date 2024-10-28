@@ -639,6 +639,12 @@ class Solution(object):
                     return i
         else : return -1
 
+    def swapPairs(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+
 
 #need to update - q 18 4Sum
 class ListNode(object):
