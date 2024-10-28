@@ -673,21 +673,30 @@ class Solution(object):
         """
         if k == 1 or head == None or head.next == None:
             return head
-        start = head
-        end = start
-        lst = []
-        for i in range(k):
-            lst.append(end)
-            end = end.next
-        new_start = lst.pop()
-        node = new_start
-        node.next = None
-        while(lst):
-            node.next = lst.pop()
-            node = node.next
-            node.next = None
-        node.next = end
-        return new_start
+        end = head
+        while(True):
+            start = end
+            lst = []
+            try:
+                for i in range(k):
+                    lst.append(end)
+                    end = end.next
+                new_start = lst.pop()
+                node = new_start
+                node.next = None
+                while (lst):
+                    node.next = lst.pop()
+                    node = node.next
+                    node.next = None
+                node.next = end
+                if start == head:
+                    head = new_start
+                    prev = node
+                else :
+                    prev.next = new_start
+                    prev = node
+            except :return head
+        return head
 
 
 
@@ -710,14 +719,14 @@ h = ListNode(1,b)
 #h = sol.removeNthFromEnd_2(h,2)
 #h = sol.mergeKLists_2([None,e])
 
-#while h:
-   # print(h.val, ",")
-  #  h = h.next
+h = sol.reverseKGroup(h,2)
+while h:
+    print(h.val, ",")
+    h = h.next
 #a = [0,0,1,1,1,2,2,3,3,4]
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.removeElement(nums = [0,1,2,2,3,0,4,2], val = 2))
 
 
 
