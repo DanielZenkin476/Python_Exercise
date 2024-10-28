@@ -505,8 +505,15 @@ class Solution(object):
         :type lists: List[Optional[ListNode]]
         :rtype: Optional[ListNode]
         """
+        n=len(lists)
+        i=0
+        while i< n:
+            if not lists[i]:
+                lists.pop(i)
+                n-=1
+            else : i+=1
         try:
-            lists = sorted(lists, key=lambda lst: lst.val)  # sort by first val
+            lists = sorted(lists, key=lambda lst: lst.val if lst else lists.remove(lst))  # sort by first val
             head = ListNode(lists[0].val)
             if lists[0].next == None:
                 lists.pop(0)
@@ -553,7 +560,6 @@ while h:
 #a = [0,0,1,1,1,2,2,3,3,4]
 #len,a  =sol.removeDuplicates(a)
 #print(a)
-
 
 
 
