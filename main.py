@@ -581,6 +581,20 @@ class Solution(object):
             else: i+=1
         return n
 
+    def removeElement_2(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        id1 = len(nums)-1
+        for id2 in range(id1,-1,-1):
+            if nums[id2]==val:
+                nums[id2] = nums[id1]
+                nums[id1]= val
+                id1-=1
+        return id1+1
+
 
 
 
