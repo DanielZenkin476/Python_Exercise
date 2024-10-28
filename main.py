@@ -665,6 +665,32 @@ class Solution(object):
                 node2 =node1.next
         return head
 
+    def reverseKGroup(self, head, k):
+        """
+        :type head: Optional[ListNode]
+        :type k: int
+        :rtype: Optional[ListNode]
+        """
+        if k == 1 or head == None or head.next == None:
+            return head
+        start = head
+        end = start
+        lst = []
+        for i in range(k):
+            lst.append(end)
+            end = end.next
+        new_start = lst.pop()
+        node = new_start
+        node.next = None
+        while(lst):
+            node.next = lst.pop()
+            node = node.next
+            node.next = None
+        node.next = end
+        return new_start
+
+
+
 
 
 

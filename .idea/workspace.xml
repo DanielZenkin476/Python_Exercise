@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="24.Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="done, 0msec tun time, memory is 111.56 (82.6)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -71,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00008" summary="done with fixes, works, had to change + and - on values bigger then -2^31 or 2^31 -1 in abs">
-      <option name="closed" value="true" />
-      <created>1729946202801</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1729946202801</updated>
     </task>
     <task id="LOCAL-00009" summary="new problem : Given an integer x, return true if x is a &#10;palindrome&#10;, and false otherwise">
       <option name="closed" value="true" />
@@ -464,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730106831843</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="done, 0msec tun time, memory is 111.56 (82.6)">
+      <option name="closed" value="true" />
+      <created>1730107532596</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1730107532596</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="final ver" />
     <MESSAGE value="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution." />
     <MESSAGE value="works great, beats most peapole (omsec runtime) ,space is 51 -" />
     <MESSAGE value="#need to update - q 18 4Sum" />
@@ -493,7 +492,8 @@
     <MESSAGE value="memory good, but runtime is not great" />
     <MESSAGE value="2nd sol, first check if in haystack then find first one - memory around the same, runtime much better" />
     <MESSAGE value="24.Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)" />
+    <MESSAGE value="done, 0msec tun time, memory is 111.56 (82.6)" />
+    <option name="LAST_COMMIT_MESSAGE" value="done, 0msec tun time, memory is 111.56 (82.6)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
