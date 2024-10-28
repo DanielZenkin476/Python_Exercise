@@ -698,6 +698,29 @@ class Solution(object):
             except :return head
         return head
 
+    def divide(self, dividend, divisor):
+        """
+        :type dividend: int
+        :type divisor: int
+        :rtype: int
+        """
+        if (divisor>0 and dividend >0) or (divisor<0 and dividend<0) : sign =1
+        else: sign =-1
+        div_abs = abs(divisor)
+        divid_abs = abs(dividend)
+        if divid_abs > ((2**31) -1) and sign==1 :
+            return (2**31) -1 *sign
+        if divid_abs > (2**31) and sign ==-1 :
+            return (2**31) *sign
+        count = 0 *sign
+        if div_abs ==1:
+            return divid_abs*sign
+        sum = 0
+        while(sum<=divid_abs):
+            sum+=div_abs
+            count+=1
+        return (count-1)*sign
+
 
 
 
@@ -726,6 +749,8 @@ while h:
 #a = [0,0,1,1,1,2,2,3,3,4]
 #len,a  =sol.removeDuplicates(a)
 #print(a)
+print(2**31)
+print(sol.divide(-2147483648, -1))
 
 
 
