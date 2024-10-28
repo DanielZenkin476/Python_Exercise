@@ -568,6 +568,21 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
+        i = 0
+        n = len(nums)
+        print(nums)
+        while (i<n):
+            if(nums[i]==val):
+                if i == n-1:
+                    return n-1
+                nums[i:n-1] = nums[i+1:n]
+                nums[n-1] = val
+                n-=1
+            else: i+=1
+        return n
+
+
+
 
 
 
@@ -589,16 +604,16 @@ b = ListNode(2,c)
 h = ListNode(1,b)
 #h = sol.mergeTwoLists(e,c)
 #h = sol.removeNthFromEnd_2(h,2)
-h = sol.mergeKLists_2([None,e])
+#h = sol.mergeKLists_2([None,e])
 
-while h:
-    print(h.val, ",")
-    h = h.next
+#while h:
+   # print(h.val, ",")
+  #  h = h.next
 #a = [0,0,1,1,1,2,2,3,3,4]
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-
+print(sol.removeElement(nums = [0,1,2,2,3,0,4,2], val = 2))
 
 
 

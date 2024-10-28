@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="works but runtime is not great">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.&#10;&#10;Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.&#10;Return k.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00001" summary="problem 8 from leetcode, did previus too, need to add. this rep will house leetcode solutions">
-      <option name="closed" value="true" />
-      <created>1729942289622</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1729942289622</updated>
     </task>
     <task id="LOCAL-00002" summary="changed function use with test">
       <option name="closed" value="true" />
@@ -455,11 +448,26 @@
       <option name="project" value="LOCAL" />
       <updated>1730103722626</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.&#10;&#10;Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.&#10;Return k.">
+      <option name="closed" value="true" />
+      <created>1730104356317</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1730104356317</updated>
+    </task>
+    <task id="LOCAL-00050">
+      <option name="closed" value="true" />
+      <created>1730104370346</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1730104370347</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working as intended, need to make it more efficent" />
     <MESSAGE value="Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.&#10;&#10;Notice that the solution set must not contain duplicate triplets." />
     <MESSAGE value="base cases done (n&lt;=3) in O(1)" />
     <MESSAGE value="added helper function to check sum of 3 ints" />
@@ -484,7 +492,8 @@
     <MESSAGE value="23.You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.&#10;&#10;Merge all the linked-lists into one sorted linked-list and return it." />
     <MESSAGE value="code works generally but still some cases are bugged ( [],[1] ) for example" />
     <MESSAGE value="works but runtime is not great" />
-    <option name="LAST_COMMIT_MESSAGE" value="works but runtime is not great" />
+    <MESSAGE value="Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.&#10;&#10;Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.&#10;Return k." />
+    <option name="LAST_COMMIT_MESSAGE" value="Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.&#10;&#10;Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.&#10;Return k." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -518,6 +527,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>373</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>571</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
