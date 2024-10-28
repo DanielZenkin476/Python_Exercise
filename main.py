@@ -608,13 +608,24 @@ class Solution(object):
                 k+=1
         return k
 
-
-
-
-
-
-
-
+    def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
+        for i in range(len(haystack)):
+            if haystack[i] == needle[0]:
+                flag = True
+                for k in range(1,len(needle)):
+                    try:
+                        if haystack[i + k] != needle[k]:
+                            flag = False
+                    except:
+                        flag = False
+                        break
+                if flag : return i
+        return -1
 
 
 #need to update - q 18 4Sum

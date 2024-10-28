@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="solved, 2msec runtime">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="added 3rd sol, better memory usage">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,22 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00003" summary="sign check added">
-      <option name="closed" value="true" />
-      <created>1729943204780</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1729943204780</updated>
-    </task>
-    <task id="LOCAL-00004" summary="works for small numbers and no middle zeros, need to fix for others">
-      <option name="closed" value="true" />
-      <created>1729944129722</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1729944129722</updated>
     </task>
     <task id="LOCAL-00005" summary="works, but need to check for diffrent inputs and problems">
       <option name="closed" value="true" />
@@ -463,12 +447,26 @@
       <option name="project" value="LOCAL" />
       <updated>1730105807972</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added 2nd sol, 0 msec">
+      <option name="closed" value="true" />
+      <created>1730105966280</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1730105966280</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added 3rd sol, better memory usage">
+      <option name="closed" value="true" />
+      <created>1730106035297</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1730106035297</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="base cases done (n&lt;=3) in O(1)" />
-    <MESSAGE value="added helper function to check sum of 3 ints" />
     <MESSAGE value="not working for 000 if 0 is in any list" />
     <MESSAGE value="works, but runtime neets help" />
     <MESSAGE value="works, runtime passed but not great" />
@@ -492,7 +490,9 @@
     <MESSAGE value="works but runtime is not great" />
     <MESSAGE value="Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.&#10;&#10;Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.&#10;Return k." />
     <MESSAGE value="solved, 2msec runtime" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved, 2msec runtime" />
+    <MESSAGE value="added 2nd sol, 0 msec" />
+    <MESSAGE value="added 3rd sol, better memory usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 3rd sol, better memory usage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,6 +531,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>571</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>583</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
