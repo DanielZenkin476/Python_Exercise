@@ -644,6 +644,28 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+        if not head or not head.next:
+            return head
+        else:
+            node1 = head
+            node2 = head.next
+            prev = None
+            while node1 is not None and node2 is not None:
+                if not prev:
+                    node1.next = node2.next
+                    head = node2
+                    node2.next = node1
+                else:
+                    node1.next = node2.next
+                    prev.next = node2
+                    node2.next = node1
+                prev = node1
+                node1 = node1.next
+                if not node1 : break
+                node2 =node1.next
+        return head
+
+
 
 
 #need to update - q 18 4Sum
