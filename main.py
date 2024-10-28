@@ -562,7 +562,12 @@ class Solution(object):
                     temp = temp.next
         return head
 
-
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
 
 
 
