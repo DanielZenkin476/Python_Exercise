@@ -960,6 +960,49 @@ class Solution(object):
         :type b: str
         :rtype: str
         """
+        a = a[::-1]
+        b = b[::-1]
+        res = ''
+        id =0
+        a_len = len(a)
+        b_len = len(b)
+        carry = 0
+        while(id<a_len and id<b_len):
+            num =int(a[id])+ int(b[id])+carry # 0 1 -> into res,
+            carry = 0
+            if num <=1:
+                res+=str(num)
+            else:
+                carry = 1
+                res+=str(num-2)# 0 if 2 1 if 3
+            id+=1
+        remain = False
+        if id<a_len:
+            remain = a
+        elif id < b_len:
+            remain = b
+        if remain:
+            while (id<a_len or id<b_len):
+                num = int(remain[id])+ carry  # 0 1 -> into res,
+                carry = 0
+                if num <= 1:
+                    res += str(num)
+                else:
+                    carry = 1
+                    res += str(num - 2)  #
+                id+=1
+        if carry:
+            res+='1'
+        return str(res[::-1])
+
+    def mySqrt(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+
+
+
 
 
 
@@ -992,7 +1035,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.plusOne([9]))
+print(sol.addBinary(a = "11", b = "1"))
 
 
 
