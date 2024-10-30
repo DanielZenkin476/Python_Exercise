@@ -954,6 +954,13 @@ class Solution(object):
                 carry = 0
         return digits
 
+    def addBinary(self, a, b):
+        """
+        :type a: str
+        :type b: str
+        :rtype: str
+        """
+
 
 
 
