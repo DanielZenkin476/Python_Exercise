@@ -780,8 +780,7 @@ class Solution(object):
             return []
         res=[]
         words_set = set(words)
-
-
+        if len(words_set)==1:#all same word
 
         for i in range(s_len):
             for word in words:
@@ -803,6 +802,30 @@ class Solution(object):
                         if i not in res: res.append(i)
         return res
 
+    def checkword(self,s,word,amount):
+        index = 0
+        checked_index = index
+        s_ln = len(s)
+        word_ln = len(word)
+        amount*= word_ln
+        res =[]
+        count = 0
+        while(checked_index< s_ln):
+            checked_index = index
+            for k in range(word_ln):
+                if s[checked_index]== word[k]:
+                    checked_index+=1
+                    count = checked_index
+                else:
+                    count = 0
+                    break
+            if count == amount:
+                count = 0
+                res.append(index)
+            index+=1
+        return res
+
+
 
 
 
@@ -814,6 +837,9 @@ class Solution(object):
                     return False
             return True
         except: return False
+
+
+
 
 
 
