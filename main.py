@@ -870,23 +870,13 @@ class Solution(object):
             else:
                 return self.recursivesol(nums,target,start,mid-1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        words = s.split()
+        return len(words[-1])
 
 
 #need to update - q 18 4Sum
@@ -913,7 +903,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.searchInsert( nums = [1,3], target = 2))
+print(sol.lengthOfLastWord("   fly me   to   the moon  "))
 
 
 
