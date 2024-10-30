@@ -878,6 +878,12 @@ class Solution(object):
         words = s.split()
         return len(s.split()[-1])
 
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+
 
 
 #need to update - q 18 4Sum
