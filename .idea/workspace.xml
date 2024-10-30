@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="the while statment is wrong line 925">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="removed jumps+=1 - not needed">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution.">
-      <option name="closed" value="true" />
-      <created>1730028103146</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1730028103146</updated>
     </task>
     <task id="LOCAL-00031" summary="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution.">
       <option name="closed" value="true" />
@@ -464,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730293745546</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="removed jumps+=1 - not needed">
+      <option name="closed" value="true" />
+      <created>1730294879162</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1730294879162</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added 2nd sol, 0 msec" />
     <MESSAGE value="added 3rd sol, better memory usage" />
     <MESSAGE value="memory good, but runtime is not great" />
     <MESSAGE value="2nd sol, first check if in haystack then find first one - memory around the same, runtime much better" />
@@ -493,7 +491,8 @@
     <MESSAGE value="second try, using recursion, working but runtime not great" />
     <MESSAGE value="add while to while loop, cuts down on unneded checks but bugs it out - neet to filter out checks because currently checks all routes" />
     <MESSAGE value="the while statment is wrong line 925" />
-    <option name="LAST_COMMIT_MESSAGE" value="the while statment is wrong line 925" />
+    <MESSAGE value="removed jumps+=1 - not needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed jumps+=1 - not needed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -560,7 +559,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>914</line>
+          <line>915</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>

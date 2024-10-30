@@ -909,23 +909,20 @@ class Solution(object):
         if len(nums)== 0:
             return True
         else:
-            return self.recursive_jump(nums,0)
+            return self.can_reach(nums,len(nums)-1)
 
-    def recursive_jump(self,nums,id):
+    def can_reach(self,nums,i):
+        if i ==0: return True
         n = len(nums)
-        if id >= n-1: return True #means id reached is the last one or more
-        else:
-            jumps = nums[id]
-            if jumps == 0 :
-                return False
-            max_id = id+jumps
-            while(max_id>id):
-                if self.recursive_jump(nums,max_id): return True
-                max_id-=1
-                curr_jump= id + jumps
-                while (id + jumps)>=(nums[max_id] + max_id)and max_id>id:#to skip unneded parts
-                    max_id-=1
+        last = i
+        id = i-1
+        while(id>=0):
+            if nums[id] < last - id:
+                id -= 1
+            else:
+                return self.can_reach(nums,id)
         return False
+
 
 
 
