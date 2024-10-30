@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="55.You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.&#10;&#10;Return true if you can reach the last index, or false otherwise.">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="second try.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -71,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00026" summary="works, but runtime neets help">
-      <option name="closed" value="true" />
-      <created>1730025215265</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1730025215265</updated>
     </task>
     <task id="LOCAL-00027" summary="works, but runtime neets help">
       <option name="closed" value="true" />
@@ -464,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730285149804</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="second try.">
+      <option name="closed" value="true" />
+      <created>1730292813133</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1730292813133</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="code works generally but still some cases are bugged ( [],[1] ) for example" />
     <MESSAGE value="works but runtime is not great" />
     <MESSAGE value="Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.&#10;&#10;Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.&#10;Return k." />
     <MESSAGE value="solved, 2msec runtime" />
@@ -493,7 +492,8 @@
     <MESSAGE value="done. vey simple - split and return len of word -1" />
     <MESSAGE value="done, possible in 1 line but for some reason more memory usage" />
     <MESSAGE value="55.You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.&#10;&#10;Return true if you can reach the last index, or false otherwise." />
-    <option name="LAST_COMMIT_MESSAGE" value="55.You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.&#10;&#10;Return true if you can reach the last index, or false otherwise." />
+    <MESSAGE value="second try." />
+    <option name="LAST_COMMIT_MESSAGE" value="second try." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -552,6 +552,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>889</line>
           <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>880</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

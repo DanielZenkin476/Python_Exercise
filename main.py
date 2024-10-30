@@ -906,6 +906,25 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        if len(nums)== 0:
+            return True
+        else:
+            return self.recursive_jump(nums,0)
+
+    def recursive_jump(self,nums,id):
+        n = len(nums)
+        if id >= n-1: return True #means id reached is the last one or more
+        else:
+            jumps = nums[id]
+            if jumps == 0 :
+                return False
+            max_id = id+jumps
+            while(max_id!=id):
+                if self.recursive_jump(nums,max_id): return True
+                max_id-=1
+        return False
+
+
 
 
 
@@ -935,7 +954,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.canJump([1,2,0,1]))
+print(sol.canJump_2([1,0]))
 
 
 
