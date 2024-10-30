@@ -765,6 +765,51 @@ class Solution(object):
         plus_lim = (2 ** 31 - 1)
         return min(max(res, minus_lim), plus_lim)
 
+    def findSubstring(self, s, words):
+        """
+        :type s: str
+        :type words: List[str]
+        :rtype: List[int]
+        """
+        s_id = 0
+        s_check = 0
+        s_len = len(s)
+        words_len = len(words[0])
+        res=[]
+        for i in range(s_len):
+            for word in words:
+                s_check = i
+                flag = self.checksubin(s,word,i)
+                if flag:
+                    remain_words = words.copy()
+                    remain_words.remove(word)
+                    s_check +=words_len
+                    k=0
+                    while len(remain_words)!=0 and k< (len(remain_words)):
+                        flag = self.checksubin(s, remain_words[k], s_check)
+                        if flag:
+                            s_check+=words_len
+                            remain_words.pop(k)
+                            k=0
+                        else: k+=1
+                    if remain_words==[]: res.append(i)
+        return res
+
+
+
+
+
+    def checksubin(self,s,word,id):
+        try:
+            for k in range(len(word)):
+                if s[k + id] != word[k]:
+                    return False
+            return True
+        except: return False
+
+
+
+
 
 
 
@@ -801,7 +846,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.divide_3(2147483647, -2))
+print(sol.findSubstring( "barfoofoobarthefoobarman", words = ["bar","foo","the"]))
 
 
 

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="diffrent sol, memory to0 big">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="new sol, works much better">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +25,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonex" />
@@ -70,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added new sol, apparently pretty good">
-      <option name="closed" value="true" />
-      <created>1729949212422</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1729949212422</updated>
     </task>
     <task id="LOCAL-00015" summary="new ques, integer to roman">
       <option name="closed" value="true" />
@@ -463,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730276921236</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="new sol, works much better">
+      <option name="closed" value="true" />
+      <created>1730277197198</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1730277197198</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new method, works faster , no recursion, runtime great" />
     <MESSAGE value="20.Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.&#10;&#10;An input string is valid if:&#10;&#10;Open brackets must be closed by the same type of brackets.&#10;Open brackets must be closed in the correct order.&#10;Every close bracket has a corresponding open bracket of the same type." />
     <MESSAGE value="done" />
     <MESSAGE value="21.You are given the heads of two sorted linked lists list1 and list2.&#10;&#10;Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.&#10;&#10;Return the head of the merged linked list." />
@@ -492,7 +492,8 @@
     <MESSAGE value="base logic works ,time limit exceeded" />
     <MESSAGE value="still need optimization on time" />
     <MESSAGE value="diffrent sol, memory to0 big" />
-    <option name="LAST_COMMIT_MESSAGE" value="diffrent sol, memory to0 big" />
+    <MESSAGE value="new sol, works much better" />
+    <option name="LAST_COMMIT_MESSAGE" value="new sol, works much better" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,6 +532,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>571</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>787</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
