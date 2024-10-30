@@ -1,3 +1,4 @@
+from bisect import bisect_right
 from itertools import filterfalse
 class Solution(object):
     def myAtoi(self, s):
@@ -1000,8 +1001,7 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-
-
+        return bisect_right(range(x+1),0,key = lambda q:q*q-x)-1
 
 
 
@@ -1035,7 +1035,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.addBinary(a = "11", b = "1"))
+print(sol.mySqrt(4))
 
 
 

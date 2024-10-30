@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="67.Given two binary strings a and b, return their sum as a binary string.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="69.Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.&#10;&#10;You must not use any built-in exponent function or operator.&#10;&#10;For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00036" summary="new method, works faster , no recursion, runtime great">
-      <option name="closed" value="true" />
-      <created>1730044674891</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1730044674891</updated>
     </task>
     <task id="LOCAL-00037" summary="20.Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.&#10;&#10;An input string is valid if:&#10;&#10;Open brackets must be closed by the same type of brackets.&#10;Open brackets must be closed in the correct order.&#10;Every close bracket has a corresponding open bracket of the same type.">
       <option name="closed" value="true" />
@@ -464,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730296417491</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="69.Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.&#10;&#10;You must not use any built-in exponent function or operator.&#10;&#10;For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.">
+      <option name="closed" value="true" />
+      <created>1730298221826</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1730298221826</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25.Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list.&#10;&#10;k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.&#10;&#10;You may not alter the values in the list's nodes, only nodes themselves may be changed.&#10;&#10; works on start of string" />
     <MESSAGE value="works, runtime 0ms memory 13.28 beats 67.46" />
     <MESSAGE value="base logic works ,time limit exceeded" />
     <MESSAGE value="still need optimization on time" />
@@ -493,7 +491,8 @@
     <MESSAGE value="66.You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.&#10;&#10;Increment the large integer by one and return the resulting array of digits." />
     <MESSAGE value="Done" />
     <MESSAGE value="67.Given two binary strings a and b, return their sum as a binary string." />
-    <option name="LAST_COMMIT_MESSAGE" value="67.Given two binary strings a and b, return their sum as a binary string." />
+    <MESSAGE value="69.Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.&#10;&#10;You must not use any built-in exponent function or operator.&#10;&#10;For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python." />
+    <option name="LAST_COMMIT_MESSAGE" value="69.Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.&#10;&#10;You must not use any built-in exponent function or operator.&#10;&#10;For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
