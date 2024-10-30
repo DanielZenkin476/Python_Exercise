@@ -781,7 +781,6 @@ class Solution(object):
         res=[]
         words_set = set(words)
         if len(words_set)==1:#all same word
-
         for i in range(s_len):
             for word in words:
                 s_check = i
@@ -824,11 +823,6 @@ class Solution(object):
                 res.append(index)
             index+=1
         return res
-
-
-
-
-
 
     def checksubin(self,s,word,id):
         try:

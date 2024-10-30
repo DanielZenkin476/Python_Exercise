@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="error caused by double word , changed so wont add if already in res, but need diffrent sol" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="still ned to work on it, added func for single item in list" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,22 +68,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00018" summary="new function done, runs much better( runtime and memory)">
-      <option name="closed" value="true" />
-      <created>1729952058671</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1729952058671</updated>
-    </task>
-    <task id="LOCAL-00019" summary="done with question, beats 88.6">
-      <option name="closed" value="true" />
-      <created>1729953298793</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1729953298793</updated>
     </task>
     <task id="LOCAL-00020" summary="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;.">
       <option name="closed" value="true" />
@@ -461,11 +445,26 @@
       <option name="project" value="LOCAL" />
       <updated>1730280432624</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="error caused by double word , changed so wont add if already in res, but need diffrent sol">
+      <option name="closed" value="true" />
+      <created>1730280763556</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1730280763556</updated>
+    </task>
+    <task id="LOCAL-00068" summary="still ned to work on it, added func for single item in list">
+      <option name="closed" value="true" />
+      <created>1730281814027</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281814027</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="done,need to improve memory" />
     <MESSAGE value="26. Remove Duplicates from Sorted Array&#10;Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.&#10;&#10;Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.&#10;Return k.&#10;trying convert to set then to list to see how it works" />
     <MESSAGE value="so should be working but on site side not because reasons?" />
     <MESSAGE value="dumb sol cos site doesnt want me to list(set()), runtime need to be better - maybe not pop elements but just move them?" />
@@ -490,7 +489,8 @@
     <MESSAGE value="works for most cases still need to check for errors" />
     <MESSAGE value="need to see error with current input" />
     <MESSAGE value="error caused by double word , changed so wont add if already in res, but need diffrent sol" />
-    <option name="LAST_COMMIT_MESSAGE" value="error caused by double word , changed so wont add if already in res, but need diffrent sol" />
+    <MESSAGE value="still ned to work on it, added func for single item in list" />
+    <option name="LAST_COMMIT_MESSAGE" value="still ned to work on it, added func for single item in list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
