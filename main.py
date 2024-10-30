@@ -781,6 +781,7 @@ class Solution(object):
         res=[]
         words_set = set(words)
         if len(words_set)==1:#all same word
+            pass
         for i in range(s_len):
             for word in words:
                 s_check = i
@@ -838,6 +839,39 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        if target<= nums[0]:
+            return 0
+        n = len(nums)
+        if target == nums[n-1]: return n-1
+        if target > nums[n-1]:
+            return n
+        return self.recursivesol(nums,target,0,n-1)
+
+    def recursivesol(self,nums,target,start,end):
+        if start == end:
+            if nums[start]== target:
+                return start
+            elif nums[start]>target:
+                return start# will bee in this position after
+            else:
+                return end+1
+        else:
+            if end-1 == start:# 2 left
+                if target<= nums[start]:
+                    return start
+                elif target <= nums[end]:
+                    return end
+                else : return end+1
+            mid = (start+end)//2
+            if nums[mid]== target:
+                return mid
+            elif nums[mid]<target:
+                return self.recursivesol(nums,target,mid,end)
+            else:
+                return self.recursivesol(nums,target,start,mid-1)
+
+
+
 
 
 
@@ -879,7 +913,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.findSubstring( "wordgoodgoodgoodbestword", words = ["word","good","best","good"]))
+print(sol.searchInsert( nums = [1,3], target = 2))
 
 
 

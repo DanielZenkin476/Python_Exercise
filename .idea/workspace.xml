@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="still ned to work on it, added func for single item in list" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="35Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.&#10;&#10;You must write an algorithm with O(log n) runtime complexity.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,22 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00020" summary="new question :Write a function to find the longest common prefix string amongst an array of strings.&#10;&#10;If there is no common prefix, return an empty string &quot;&quot;.">
-      <option name="closed" value="true" />
-      <created>1730021899673</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1730021899673</updated>
-    </task>
-    <task id="LOCAL-00021" summary="working as intended, need to make it more efficent">
-      <option name="closed" value="true" />
-      <created>1730022438391</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1730022438391</updated>
     </task>
     <task id="LOCAL-00022" summary="Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.&#10;&#10;Notice that the solution set must not contain duplicate triplets.">
       <option name="closed" value="true" />
@@ -461,11 +448,26 @@
       <option name="project" value="LOCAL" />
       <updated>1730281814027</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="35Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.&#10;&#10;You must write an algorithm with O(log n) runtime complexity.">
+      <option name="closed" value="true" />
+      <created>1730281870387</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281870387</updated>
+    </task>
+    <task id="LOCAL-00070" summary="35Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.&#10;&#10;You must write an algorithm with O(log n) runtime complexity.">
+      <option name="closed" value="true" />
+      <created>1730281880323</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281880323</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="26. Remove Duplicates from Sorted Array&#10;Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.&#10;&#10;Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:&#10;&#10;Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.&#10;Return k.&#10;trying convert to set then to list to see how it works" />
     <MESSAGE value="so should be working but on site side not because reasons?" />
     <MESSAGE value="dumb sol cos site doesnt want me to list(set()), runtime need to be better - maybe not pop elements but just move them?" />
     <MESSAGE value="more efficent, doesnt pop but replaces elements" />
@@ -490,7 +492,8 @@
     <MESSAGE value="need to see error with current input" />
     <MESSAGE value="error caused by double word , changed so wont add if already in res, but need diffrent sol" />
     <MESSAGE value="still ned to work on it, added func for single item in list" />
-    <option name="LAST_COMMIT_MESSAGE" value="still ned to work on it, added func for single item in list" />
+    <MESSAGE value="35Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
+    <option name="LAST_COMMIT_MESSAGE" value="35Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.&#10;&#10;You must write an algorithm with O(log n) runtime complexity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -529,6 +532,16 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>571</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>841</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>850</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
