@@ -919,12 +919,12 @@ class Solution(object):
             if jumps == 0 :
                 return False
             max_id = id+jumps
-            while(max_id!=id):
+            while(max_id>id):
                 if self.recursive_jump(nums,max_id): return True
                 max_id-=1
-                while(jumps>(nums[max_id]+1)and max_id!=id):#to skip unneded parts
+                curr_jump= id + jumps
+                while (id + jumps)>=(nums[max_id] + max_id)and max_id>id:#to skip unneded parts
                     max_id-=1
-                    jumps+=1
         return False
 
 
