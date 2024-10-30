@@ -957,7 +957,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.canJump_2([1,0,2]))
+print(sol.canJump_2([5,9,3,2,1,0,2,3,3,1,0,0]))
 
 
 
