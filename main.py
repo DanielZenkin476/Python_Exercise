@@ -922,6 +922,9 @@ class Solution(object):
             while(max_id!=id):
                 if self.recursive_jump(nums,max_id): return True
                 max_id-=1
+                while(jumps>(nums[max_id]+1)and max_id!=id):#to skip unneded parts
+                    max_id-=1
+                    jumps+=1
         return False
 
 
@@ -954,7 +957,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.canJump_2([1,0]))
+print(sol.canJump_2([1,0,2]))
 
 
 
