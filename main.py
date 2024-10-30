@@ -775,7 +775,14 @@ class Solution(object):
         s_check = 0
         s_len = len(s)
         words_len = len(words[0])
+        words_count = len(words)
+        if s_len < len(words):
+            return []
         res=[]
+        words_set = set(words)
+
+
+
         for i in range(s_len):
             for word in words:
                 s_check = i
