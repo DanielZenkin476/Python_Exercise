@@ -846,7 +846,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.findSubstring( "barfoofoobarthefoobarman", words = ["bar","foo","the"]))
+print(sol.findSubstring( "wordgoodgoodgoodbestword", words = ["word","good","best","good"]))
 
 
 
