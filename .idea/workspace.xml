@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="base logic works ,time limit exceeded">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="still need optimization on time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -16,22 +16,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2nyPDqVJXUOi3Z4QEQo7CYiIZOq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonex" />
@@ -71,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00012" summary="removed max_check for space">
-      <option name="closed" value="true" />
-      <created>1729947307026</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1729947307026</updated>
     </task>
     <task id="LOCAL-00013" summary="added new sol">
       <option name="closed" value="true" />
@@ -464,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730113142569</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="still need optimization on time">
+      <option name="closed" value="true" />
+      <created>1730127224270</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1730127224270</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new ques- did it wrong :Given the head of a linked list, remove the nth node from the end of the list and return its head. #### from the end!!!" />
     <MESSAGE value="used recursion, works but can do better" />
     <MESSAGE value="new method, works faster , no recursion, runtime great" />
     <MESSAGE value="20.Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.&#10;&#10;An input string is valid if:&#10;&#10;Open brackets must be closed by the same type of brackets.&#10;Open brackets must be closed in the correct order.&#10;Every close bracket has a corresponding open bracket of the same type." />
@@ -493,7 +492,8 @@
     <MESSAGE value="25.Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list.&#10;&#10;k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.&#10;&#10;You may not alter the values in the list's nodes, only nodes themselves may be changed.&#10;&#10; works on start of string" />
     <MESSAGE value="works, runtime 0ms memory 13.28 beats 67.46" />
     <MESSAGE value="base logic works ,time limit exceeded" />
-    <option name="LAST_COMMIT_MESSAGE" value="base logic works ,time limit exceeded" />
+    <MESSAGE value="still need optimization on time" />
+    <option name="LAST_COMMIT_MESSAGE" value="still need optimization on time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -532,11 +532,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>571</line>
           <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>729</line>
-          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

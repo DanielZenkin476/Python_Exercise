@@ -727,35 +727,17 @@ class Solution(object):
         :type divisor: int
         :rtype: int
         """
-        if divisor == 1:
-            count=  dividend
-        elif divisor ==-1:
-            count=  -dividend
-        else:
-            abs_divisor = abs(divisor)
-            abs_dividend = abs(dividend)
-            if abs_divisor > abs_dividend: return 0
-            if (dividend > 0 and divisor > 0) or (dividend < 0 and divisor < 0):
-                sign = 1
-            else:
-                sign = -1
-            if abs_dividend == abs_divisor: return sign
-            sum = abs_divisor
-            count = sign
-            while (sum <= abs_dividend):
-                sum += sum
-                count += count
-            while (sum >= abs_dividend):
-                sum -= abs_divisor
-                if sign == -1:
-                    count += 1
-                else:
-                    count -= 1
-        if count > ((2 ** 31) - 1):
-            return (2 ** 31) - 1
-        if count < -(2 ** 31):
-            return -(2 ** 31)
-        return count
+        if (divisor >0 and dividend >=0) or (dividend<=0 and divisor<0):
+            sign =1
+        else: sign =-1
+        dividend = abs(dividend)
+        divisor = abs(divisor)
+        res = len(range(0,dividend-divisor+1,divisor))
+        if sign==-1:
+            res = -res
+        minus_lim = -(2**31)
+        plus_lim = (2**31-1)
+        return min(max(res,minus_lim),plus_lim)
 
 
 
@@ -791,7 +773,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.divide_2(7, -3))
+print(sol.divide_2(2147483647, -2))
 
 
 
