@@ -876,7 +876,8 @@ class Solution(object):
         :rtype: int
         """
         words = s.split()
-        return len(words[-1])
+        return len(s.split()[-1])
+
 
 
 #need to update - q 18 4Sum
