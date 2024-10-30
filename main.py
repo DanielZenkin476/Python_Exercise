@@ -781,7 +781,7 @@ class Solution(object):
                 s_check = i
                 flag = self.checksubin(s,word,i)
                 if flag:
-                    remain_words = words.copy()
+                    remain_words = list(words)
                     remain_words.remove(word)
                     s_check +=words_len
                     k=0
@@ -792,7 +792,8 @@ class Solution(object):
                             remain_words.pop(k)
                             k=0
                         else: k+=1
-                    if remain_words==[]: res.append(i)
+                    if remain_words==[]:
+                        if i not in res: res.append(i)
         return res
 
 
