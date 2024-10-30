@@ -933,6 +933,12 @@ class Solution(object):
             sum-=1
         return True
 
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+
 
 
 
