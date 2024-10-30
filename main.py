@@ -923,6 +923,16 @@ class Solution(object):
                 return self.can_reach(nums,id)
         return False
 
+    def can_jump_3(selfself,nums):
+        sum =0
+        for i in nums:
+            if sum<0:
+                return False
+            elif i>sum:
+                sum=i
+            sum-=1
+        return True
+
 
 
 

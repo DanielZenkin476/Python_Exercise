@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="removed jumps+=1 - not needed">
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="did it recursevly, new function works">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.&#10;&#10;Return the sum of the three integers.&#10;&#10;You may assume that each input would have exactly one solution.">
-      <option name="closed" value="true" />
-      <created>1730028118052</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1730028118052</updated>
     </task>
     <task id="LOCAL-00032" summary="works great, beats most peapole (omsec runtime) ,space is 51 -">
       <option name="closed" value="true" />
@@ -463,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730294879162</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="did it recursevly, new function works">
+      <option name="closed" value="true" />
+      <created>1730295472733</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1730295472733</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added 3rd sol, better memory usage" />
     <MESSAGE value="memory good, but runtime is not great" />
     <MESSAGE value="2nd sol, first check if in haystack then find first one - memory around the same, runtime much better" />
     <MESSAGE value="24.Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)" />
@@ -492,7 +491,8 @@
     <MESSAGE value="add while to while loop, cuts down on unneded checks but bugs it out - neet to filter out checks because currently checks all routes" />
     <MESSAGE value="the while statment is wrong line 925" />
     <MESSAGE value="removed jumps+=1 - not needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed jumps+=1 - not needed" />
+    <MESSAGE value="did it recursevly, new function works" />
+    <option name="LAST_COMMIT_MESSAGE" value="did it recursevly, new function works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -556,11 +556,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>880</line>
           <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>915</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
