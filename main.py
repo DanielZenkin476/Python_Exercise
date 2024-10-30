@@ -883,6 +883,31 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        if len(nums) ==1 :
+            return True
+        id = 0
+        while(id<len(nums)):
+            jumps = nums[id]
+            if (jumps+id >=len(nums)-1):
+                return True
+            max = [-1, -1]  # id ,jums on id
+            for k in range(1, jumps + 1):
+                try:
+                    if max[1] <= (nums[k + id] + id):
+                        max = [k + id, nums[k + id]]
+                except: break
+            if max[1]<=0: return False
+            id += max[1]-1
+        if id >=len(nums): return True
+        return False
+
+    def canJump_2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+
+
 
 
 
@@ -910,7 +935,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.lengthOfLastWord("   fly me   to   the moon  "))
+print(sol.canJump([1,2,0,1]))
 
 
 
