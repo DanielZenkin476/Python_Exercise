@@ -739,6 +739,34 @@ class Solution(object):
         plus_lim = (2**31-1)
         return min(max(res,minus_lim),plus_lim)
 
+    def divide_3(self, dividend, divisor):
+        """
+        :type dividend: int
+        :type divisor: int
+        :rtype: int
+        """
+        if (divisor >0 and dividend >=0) or (dividend<=0 and divisor<0):
+            sign =1
+        else: sign =-1
+        dividend = abs(dividend)
+        divisor = abs(divisor)
+        res = 0
+        while(dividend>=divisor):
+            n=1
+            add = divisor
+            while(dividend>=add):
+                res+=n
+                dividend-=add
+                add+=add
+                n+=n
+        if sign<0:
+            res = -res
+        minus_lim = -(2 ** 31)
+        plus_lim = (2 ** 31 - 1)
+        return min(max(res, minus_lim), plus_lim)
+
+
+
 
 
 
@@ -773,7 +801,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.divide_2(2147483647, -2))
+print(sol.divide_3(2147483647, -2))
 
 
 

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="still need optimization on time">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0efef5c9-5b1a-479e-814b-4434b85d1987" name="Changes" comment="diffrent sol, memory to0 big">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729942225696</updated>
-    </task>
-    <task id="LOCAL-00013" summary="added new sol">
-      <option name="closed" value="true" />
-      <created>1729949188669</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1729949188669</updated>
     </task>
     <task id="LOCAL-00014" summary="added new sol, apparently pretty good">
       <option name="closed" value="true" />
@@ -464,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1730127224270</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="diffrent sol, memory to0 big">
+      <option name="closed" value="true" />
+      <created>1730276921235</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1730276921236</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="used recursion, works but can do better" />
     <MESSAGE value="new method, works faster , no recursion, runtime great" />
     <MESSAGE value="20.Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.&#10;&#10;An input string is valid if:&#10;&#10;Open brackets must be closed by the same type of brackets.&#10;Open brackets must be closed in the correct order.&#10;Every close bracket has a corresponding open bracket of the same type." />
     <MESSAGE value="done" />
@@ -493,7 +491,8 @@
     <MESSAGE value="works, runtime 0ms memory 13.28 beats 67.46" />
     <MESSAGE value="base logic works ,time limit exceeded" />
     <MESSAGE value="still need optimization on time" />
-    <option name="LAST_COMMIT_MESSAGE" value="still need optimization on time" />
+    <MESSAGE value="diffrent sol, memory to0 big" />
+    <option name="LAST_COMMIT_MESSAGE" value="diffrent sol, memory to0 big" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
