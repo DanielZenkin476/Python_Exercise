@@ -938,6 +938,21 @@ class Solution(object):
         :type digits: List[int]
         :rtype: List[int]
         """
+        n = len(digits)
+        if n==0:
+            return [1]
+        carry = 1
+        digit_id = n-1
+        while(carry):
+            if digit_id<0 :
+                return [1]+digits
+            digits[digit_id]+=carry
+            if digits[digit_id]>=10:
+                digits[digit_id] = 0
+                digit_id-=1
+            else:
+                carry = 0
+        return digits
 
 
 
@@ -970,7 +985,7 @@ h = sol.reverseKGroup(h,2)
 #len,a  =sol.removeDuplicates(a)
 #print(a)
 
-print(sol.canJump_2([5,9,3,2,1,0,2,3,3,1,0,0]))
+print(sol.plusOne([9]))
 
 
 
